@@ -3,22 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Pages.MainTable">
     <ContentPage.Content>
-        <StackLayout>
-            <ListView x:Name="listViewm" ItemsSource="{Binding MyItems}" BackgroundColor="LightBlue" >
-                <ListView.Header>
-                    <Grid BackgroundColor="Black">
+
+        <StackLayout Padding="10,10,10,10">
+            <Grid BackgroundColor="Black">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*" x:Name="gridcolumn1"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text ="выфвыфв" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column" ></Label>
+                <Label Grid.Column="1" Text ="фвыывф" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column1"></Label>
+                <Label Grid.Column="2" Text ="выфывфвы" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column2"></Label>
+                <Label Grid.Column="3" Text ="фввыфвфыфыывф" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column3"></Label>
+            </Grid>
+            <ListView x:Name="listViewm" ItemsSource="{Binding MyItems}" BackgroundColor="Black" >
+                <!--<ListView.Header>
+                    --><!--<Grid BackgroundColor="Black">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"></ColumnDefinition>
-                            <ColumnDefinition Width="1*" x:Name="gridcolumn"></ColumnDefinition>
+                            <ColumnDefinition Width="1*" x:Name="gridcolumn1"></ColumnDefinition>
                             <ColumnDefinition Width="1*"></ColumnDefinition>
                             <ColumnDefinition Width="1*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Label Text="Switch" HorizontalOptions="Fill"  Grid.Column="0"   FontSize="Medium" FontAttributes="Bold" BackgroundColor="MediumBlue" TextColor="White" HorizontalTextAlignment="Center" Margin="1"/>
                         <Label Text="Addend 1" HorizontalOptions="Fill"  Grid.Column="1"  FontSize="Medium" FontAttributes="Bold" BackgroundColor="MediumBlue" TextColor="White" HorizontalTextAlignment="Center" Margin="1"/>
                         <Label Text="Addend 2" HorizontalOptions="Fill"  Grid.Column="2"  FontSize="Medium" FontAttributes="Bold" BackgroundColor="MediumBlue" TextColor="White" HorizontalTextAlignment="Center" Margin="1"/>
-                        <Label Text="Result" HorizontalOptions="Fill"  Grid.Column="3"  FontSize="Medium" FontAttributes="Bold" BackgroundColor="MediumBlue" TextColor="White" HorizontalTextAlignment="Center" Margin="1" IsVisible="False"/>
-                    </Grid>
-                </ListView.Header>
+                        <Label Text="Result" HorizontalOptions="Fill"  Grid.Column="3"  FontSize="Medium" FontAttributes="Bold" BackgroundColor="MediumBlue" TextColor="White" HorizontalTextAlignment="Center" Margin="1" 
+/>
+                    </Grid>--><!--
+                </ListView.Header>-->
                 
                 <ListView.ItemTemplate>
                     
@@ -29,14 +43,16 @@
                             <Grid BackgroundColor="Black">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="1*"></ColumnDefinition>
-                                    <ColumnDefinition Width="1*"></ColumnDefinition>
-                                    <ColumnDefinition Width="1*"></ColumnDefinition>
                                     <ColumnDefinition Width="1*" x:Name="gridcolumn1"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*" ></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                                    <ColumnDefinition Width="1*"></ColumnDefinition>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Text ="{Binding Switch}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column" ></Label>
-                                <Label Grid.Column="1" Text ="{Binding Addend1}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column1"></Label>
-                                <Label Grid.Column="2" Text ="{Binding Addend2}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column2"></Label>
-                                <Label Grid.Column="3" Text ="{Binding Result}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column3"></Label>
+                                <Label Grid.Column="0" Text ="{Binding Number}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column4" ></Label>
+                                <Label Grid.Column="1" Text ="{Binding Material}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column" ></Label>
+                                <Label Grid.Column="2" Text ="{Binding СonstructiveItemsDescription}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column1"></Label>
+                                <Label Grid.Column="3" Text ="{Binding TechnicalConditionDescription}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column2"></Label>
+                                <Label Grid.Column="4" Text ="{Binding WearRate}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1" x:Name="column3"></Label>
                             </Grid>
                             
                             

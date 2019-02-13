@@ -4342,23 +4342,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mashi\\.nuget\\packages\\": {},
+    "C:\\Users\\Kirill\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1\\App1.csproj",
+      "projectUniqueName": "D:\\InventoryApplicationV2\\App1\\App1\\App1.csproj",
       "projectName": "App1",
-      "projectPath": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1\\App1.csproj",
-      "packagesPath": "C:\\Users\\mashi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1\\obj\\",
+      "projectPath": "D:\\InventoryApplicationV2\\App1\\App1\\App1.csproj",
+      "packagesPath": "C:\\Users\\Kirill\\.nuget\\packages\\",
+      "outputPath": "D:\\InventoryApplicationV2\\App1\\App1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mashi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kirill\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

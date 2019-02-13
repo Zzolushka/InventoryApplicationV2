@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App1.Models;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -15,167 +16,17 @@ namespace App1.Pages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MainTable : ContentPage
 	{
-        public ListView ListView;
-        public int entry;
-        
-
-        public ObservableCollection<MyItem> MyItems{ get; set; }
-        public List<Phone> Phones { get; set; }
+        public ObservableCollection<MainTableModel> MyItems{ get; set; }
         public MainTable()
         {
             InitializeComponent();
-            Phones = new List<Phone>
+   
+            MyItems = new ObservableCollection<MainTableModel>();
+
+            for (int i = 0; i < 100; i++)
             {
-                new Phone {Title="Galaxy S8", Company="Samsung", Price=48000 },
-                new Phone {Title="Huawei P10", Company="Huawei", Price=35000 },
-                new Phone {Title="HTC U Ultra", Company="HTC", Price=42000 },
-                new Phone {Title="iPhone 7", Company="Apple", Price=52000 }
-            };
-            
-
-            MyItems = new ObservableCollection<MyItem>();
-            MyItems.Add(new MyItem() { Switch = true, Addend1 = 1, Addend2 = 2 });
-            MyItems.Add(new MyItem() { Switch = false, Addend1 = 1, Addend2 = 2 });
-            MyItems.Add(new MyItem() { Switch = true, Addend1 = 2, Addend2 = 3 });
-            MyItems.Add(new MyItem() { Switch = false, Addend1 = 2, Addend2 = 3 });
-
-
-            ListView = new ListView();
-
-           
-
-            
-            
-
-            this.BindingContext = this;
-        }
-
-        public async void OnItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            Phone selectedPhone = e.Item as Phone;
-            if (selectedPhone != null)
-                await DisplayAlert("Выбранная модель", $"{selectedPhone.Company} - {selectedPhone.Title}", "OK");
-        }
-
-        public class Phone
-        {
-            public string Title { get; set; }
-            public string Company { get; set; }
-            public int Price { get; set; }
-        }
-
-        
-        public class MyItem : INotifyPropertyChanged
-        {
-            bool _switch = false;
-            public bool Switch
-            {
-                get
-                {
-                    return _switch;
-                }
-                set
-                {
-                    if (_switch != value)
-                    {
-                        _switch = value;
-                        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Switch"));
-                    }
-                }
-
+                MyItems.Add(new MainTableModel { Number = i.ToString(), Material = "Пластик", TechnicalConditionDescription = "Я не знаю что тут должно быть", WearRate = 2.5, СonstructiveItemsDescription = "Я тоэе хз"});
             }
-            public int Addend1 { get; set; }
-            public int Addend2 { get; set; }
-            public int Result
-            {
-                get
-                {
-                    return Addend1 + Addend2;
-                }
-            }
-            public string Summary
-            {
-                get
-                {
-                    return Addend1 + " + " + Addend2 + " = " + Result;
-                }
-            }
-            public event PropertyChangedEventHandler PropertyChanged;
-        }
-
-        public class AlternateColorDataTemplateSelector : DataTemplateSelector
-        {
-            public DataTemplate EvenTemplate { get; set; }
-            public DataTemplate UnevenTemplate { get; set; }
-
-            protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
-            {
-                // TODO: Maybe some more error handling here
-                return ((List<string>)((ListView)container).ItemsSource).IndexOf(item as string) % 2 == 0 ? EvenTemplate : UnevenTemplate;
-            }
-        }
-
-        private bool isRowEven;
-        private bool isHideColumn;
-
-        private void Cell_OnAppearing(object sender, EventArgs e)
-        {
-            var viewCell = (ViewCell)sender;
-            if (this.isRowEven)
-            {
-                
-                if (viewCell.View != null)
-                {
-                   
-                 //   viewCell.View.BackgroundColor = Color.Gray;
-                    var label = (Label)viewCell.FindByName("column");
-                    var label2 = (Label)viewCell.FindByName("column1");
-                    var label3 = (Label)viewCell.FindByName("column2");
-                    var label4 = (Label)viewCell.FindByName("column3");
-
-                    ChangeLabelColorToOther(label, Color.Gray);
-                    ChangeLabelColorToOther(label2, Color.Gray);
-                    ChangeLabelColorToOther(label3, Color.Gray);
-                    ChangeLabelColorToOther(label4, Color.Gray);
-
-             
-
-                    //label4.IsVisible = false;
-                }
-                
-            }
-
-            if(this.isHideColumn)
-            {
-                var gridcolumn = (ColumnDefinition)viewCell.FindByName("gridcolumn1");
-            
-                gridcolumn.Width = 0;
-            }
-            else
-            {
-
-            }
-
-            this.isRowEven = !this.isRowEven;
-        }
-
-        private void ChangeLabelColorToOther(Label label,Color color)
-        {
-            label.BackgroundColor = color;
-        }
-
-        private void HideAndShowColumn(object sender,EventArgs e)
-        {
-            
-            listViewm.BeginRefresh();
-            
-            listViewm.EndRefresh();
-
-            entry = 0;
-
-           
-
-           
 
             IEnumerable<PropertyInfo> pInfos = (listViewm as ItemsView<Cell>).GetType().GetRuntimeProperties();
             var templatedItems = pInfos.FirstOrDefault(info => info.Name == "TemplatedItems");
@@ -186,56 +37,144 @@ namespace App1.Pages
                 for (int i = 0; i < listCell.Count; i++)
                 {
                     var viewCell = (ViewCell)listCell.ElementAt(i);
-                    //if (this.isRowEven)
-                    //{
-
-                    //    if (viewCell.View != null)
-                    //    {
-
-                    //        //   viewCell.View.BackgroundColor = Color.Gray;
-                    //        var label = (Label)viewCell.FindByName("column");
-                    //        var label2 = (Label)viewCell.FindByName("column1");
-                    //        var label3 = (Label)viewCell.FindByName("column2");
-                    //        var label4 = (Label)viewCell.FindByName("column3");
-
-                    //        ChangeLabelColorToOther(label, Color.Gray);
-                    //        ChangeLabelColorToOther(label2, Color.Gray);
-                    //        ChangeLabelColorToOther(label3, Color.Gray);
-                    //        ChangeLabelColorToOther(label4, Color.Gray);
-
-
-
-                    //        //label4.IsVisible = false;
-                    //    }
-
-                    //}
-
-                    if (this.isHideColumn==true)
+                    if (this.isRowEven)
                     {
-                        var gridcolumn = (ColumnDefinition)viewCell.FindByName("gridcolumn1");
 
-                        gridcolumn.Width = 0;
+                        if (viewCell.View != null)
+                        {
 
-                        isHideColumn = false;
-                      
-                    }
-                    else
-                    {
-                        var gridcolumn = (ColumnDefinition)viewCell.FindByName("gridcolumn1");
-                        gridcolumn.Width = 1;
+                            //   viewCell.View.BackgroundColor = Color.Gray;
+                            var label = (Label)viewCell.FindByName("column");
+                            var label2 = (Label)viewCell.FindByName("column1");
+                            var label3 = (Label)viewCell.FindByName("column2");
+                            var label4 = (Label)viewCell.FindByName("column3");
+                            var label5 = (Label)viewCell.FindByName("column4");
 
-                        isHideColumn = true;
-                        
+                            ChangeLabelColorToOther(label, Color.LightYellow);
+                            ChangeLabelColorToOther(label2, Color.LightYellow);
+                            ChangeLabelColorToOther(label3, Color.LightYellow);
+                            ChangeLabelColorToOther(label4, Color.LightYellow);
+                            ChangeLabelColorToOther(label5, Color.LightYellow);
+                        }
+
                     }
 
+                }
+            }
 
-                    
+            this.BindingContext = this;
+        }
+
+        private bool isRowEven;
+        private bool isHideColumn;
+
+        private void Cell_OnAppearing(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ChangeLabelColorToOther(Label label,Color color)
+        {
+            label.BackgroundColor = color;
+        }
+
+        private void HideAndShowColumn(object sender, EventArgs e)
+        {
+            if (this.isHideColumn == true)
+            {
+                isRowEven = true;
+                IEnumerable<PropertyInfo> pInfos = (listViewm as ItemsView<Cell>).GetType().GetRuntimeProperties();
+                var templatedItems = pInfos.FirstOrDefault(info => info.Name == "TemplatedItems");
+                if (templatedItems != null)
+                {
+                    var cells = templatedItems.GetValue(listViewm);
+                    Xamarin.Forms.ITemplatedItemsList<Xamarin.Forms.Cell> listCell = cells as Xamarin.Forms.ITemplatedItemsList<Xamarin.Forms.Cell>;
+                    for (int i = 0; i < listCell.Count; i++)
+                    {
+                        var viewCell = (ViewCell)listCell.ElementAt(i);
+                        if (this.isRowEven)
+                        {
+
+                            if (viewCell.View != null)
+                            {
+
+                                //   viewCell.View.BackgroundColor = Color.Gray;
+                                var label = (Label)viewCell.FindByName("column");
+                                var label2 = (Label)viewCell.FindByName("column1");
+                                var label3 = (Label)viewCell.FindByName("column2");
+                                var label4 = (Label)viewCell.FindByName("column3");
+                                var label5 = (Label)viewCell.FindByName("column4");
+
+                                ChangeLabelColorToOther(label, Color.LightYellow);
+                                ChangeLabelColorToOther(label2, Color.LightYellow);
+                                ChangeLabelColorToOther(label3, Color.LightYellow);
+                                ChangeLabelColorToOther(label4, Color.LightYellow);
+                                ChangeLabelColorToOther(label5, Color.LightYellow);
+
+
+                                //label4.IsVisible = false;
+                            }
+
+                        }
+
+                        isRowEven = !isRowEven;
+
+                        var gridcolumn = (ColumnDefinition)viewCell.FindByName("gridcolumn1");
+
+                            gridcolumn.Width = 0;
+
+                    }
                 }
 
 
-
-                listCell = listCell;
+                isHideColumn = false;
             }
+            else
+            {
+                isRowEven = true;
+                IEnumerable<PropertyInfo> pInfos = (listViewm as ItemsView<Cell>).GetType().GetRuntimeProperties();
+                var templatedItems = pInfos.FirstOrDefault(info => info.Name == "TemplatedItems");
+                if (templatedItems != null)
+                {
+                    var cells = templatedItems.GetValue(listViewm);
+                    Xamarin.Forms.ITemplatedItemsList<Xamarin.Forms.Cell> listCell = cells as Xamarin.Forms.ITemplatedItemsList<Xamarin.Forms.Cell>;
+                    for (int i = 0; i < listCell.Count; i++)
+                    {
+                        var viewCell = (ViewCell)listCell.ElementAt(i);
+                        if (this.isRowEven)
+                        {
+
+                            if (viewCell.View != null)
+                            {
+
+                                //   viewCell.View.BackgroundColor = Color.Gray;
+                                var label = (Label)viewCell.FindByName("column");
+                                var label2 = (Label)viewCell.FindByName("column1");
+                                var label3 = (Label)viewCell.FindByName("column2");
+                                var label4 = (Label)viewCell.FindByName("column3");
+                                var label5 = (Label)viewCell.FindByName("column4");
+
+                                ChangeLabelColorToOther(label, Color.LightYellow);
+                                ChangeLabelColorToOther(label2, Color.LightYellow);
+                                ChangeLabelColorToOther(label3, Color.LightYellow);
+                                ChangeLabelColorToOther(label4, Color.LightYellow);
+                                ChangeLabelColorToOther(label5, Color.LightYellow);
+                            }
+
+                        }
+
+                        isRowEven = !isRowEven;
+                        var gridcolumn = (ColumnDefinition)viewCell.FindByName("gridcolumn1");
+
+                        gridcolumn.Width = new GridLength(1, GridUnitType.Star) { };
+
+                    }
+                }
+
+
+                isHideColumn = true;
+            }
+        
         }
        
 

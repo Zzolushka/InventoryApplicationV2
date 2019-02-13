@@ -4260,20 +4260,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mashi\\.nuget\\packages\\": {}
+    "C:\\Users\\Kirill\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
+      "projectUniqueName": "D:\\InventoryApplicationV2\\App1\\App1.iOS\\App1.iOS.csproj",
       "projectName": "App1.iOS",
-      "projectPath": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1.iOS\\App1.iOS.csproj",
-      "packagesPath": "C:\\Users\\mashi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1.iOS\\obj\\",
+      "projectPath": "D:\\InventoryApplicationV2\\App1\\App1.iOS\\App1.iOS.csproj",
+      "packagesPath": "C:\\Users\\Kirill\\.nuget\\packages\\",
+      "outputPath": "D:\\InventoryApplicationV2\\App1\\App1.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\mashi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kirill\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4286,8 +4286,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
-              "projectPath": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1\\App1.csproj"
+            "D:\\InventoryApplicationV2\\App1\\App1\\App1.csproj": {
+              "projectPath": "D:\\InventoryApplicationV2\\App1\\App1\\App1.csproj"
             }
           }
         }
