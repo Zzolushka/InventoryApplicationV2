@@ -1,0 +1,15 @@
+c:\users\mashi\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+c:\users\mashi\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.dll
+c:\users\mashi\source\repos\App1\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Pages\FirstPage.xaml.g.cs
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
+c:\users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Pages\PopupPages\ImageOnFullWindow.xaml.g.cs
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Pages\MainTable.xaml.g.cs
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp

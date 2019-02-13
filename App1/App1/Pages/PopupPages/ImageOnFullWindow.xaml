@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Pages.PopupPages.ImageOnFullWindow"
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+    <FlexLayout Direction="Column">
+        <Frame FlexLayout.Basis="100%">
+            <Image BackgroundColor="Black" x:Name="img" HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    Aspect="Fill">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer 
+                            Tapped="CloseThisPage" 
+                            NumberOfTapsRequired="2" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Frame>
+        <!--<Button Clicked="CloseThisPage" Text="Закрыть это окно" FlexLayout.Basis="10%">
+        </Button>-->
+    </FlexLayout>
+</pages:PopupPage>
