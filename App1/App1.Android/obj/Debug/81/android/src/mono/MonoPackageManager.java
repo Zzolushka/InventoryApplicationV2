@@ -108,6 +108,10 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "App1.Android.dll" comes first in this list. */
 		"App1.Android.dll",
 		"App1.dll",
+		"DevExpress.Mobile.Core.Android.v18.2.dll",
+		"DevExpress.Mobile.Core.v18.2.dll",
+		"DevExpress.Mobile.Grid.Android.v18.2.dll",
+		"DevExpress.Mobile.Grid.v18.2.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Data.Sqlite.dll",
 		"Microsoft.DotNet.PlatformAbstractions.dll",
@@ -139,6 +143,16 @@ class MonoPackageManager_Resources {
 		"SQLitePCLRaw.core.dll",
 		"SQLitePCLRaw.lib.e_sqlite3.dll",
 		"SQLitePCLRaw.provider.e_sqlite3.dll",
+		"Syncfusion.Core.XForms.Android.dll",
+		"Syncfusion.Core.XForms.dll",
+		"Syncfusion.Data.Portable.dll",
+		"Syncfusion.GridCommon.Portable.dll",
+		"Syncfusion.Licensing.dll",
+		"Syncfusion.SfDataGrid.XForms.Android.dll",
+		"Syncfusion.SfDataGrid.XForms.dll",
+		"Syncfusion.SfNumericTextBox.Android.dll",
+		"Syncfusion.SfNumericTextBox.XForms.Android.dll",
+		"Syncfusion.SfNumericTextBox.XForms.dll",
 		"System.Buffers.dll",
 		"System.Collections.Immutable.dll",
 		"System.Diagnostics.DiagnosticSource.dll",
@@ -165,12 +179,11 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
 		"Xamarin.Forms.Core.dll",
-		"Xamarin.Forms.DataGrid.dll",
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_27";
+	public static final String ApiPackageName = null;
 }

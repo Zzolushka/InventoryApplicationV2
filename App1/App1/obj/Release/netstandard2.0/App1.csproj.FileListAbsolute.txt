@@ -1,0 +1,16 @@
+C:\Users\mashi\source\repos\App1\App1\App1\bin\Release\netstandard2.0\App1.deps.json
+C:\Users\mashi\source\repos\App1\App1\App1\bin\Release\netstandard2.0\App1.dll
+C:\Users\mashi\source\repos\App1\App1\App1\bin\Release\netstandard2.0\App1.pdb
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\App1.csprojAssemblyReference.cache
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\Pages\FirstPage.xaml.g.cs
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\Pages\MainTable.xaml.g.cs
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\Pages\PopupPages\ImageOnFullWindow.xaml.g.cs
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\Pages\TestPage.xaml.g.cs
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\App1.csproj.CoreCompileInputs.cache
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\App1.AssemblyInfoInputs.cache
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\App1.AssemblyInfo.cs
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\App1.dll
+C:\Users\mashi\source\repos\App1\App1\App1\obj\Release\netstandard2.0\App1.pdb

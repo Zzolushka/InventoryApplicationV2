@@ -431,6 +431,66 @@
           "lib/netstandard1.1/SQLitePCLRaw.core.dll": {}
         }
       },
+      "Syncfusion.Licensing/16.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/16.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "16.4.0.53"
+        },
+        "compile": {
+          "lib/netstandard1.0/Syncfusion.Core.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Syncfusion.Core.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.GridCommon/16.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Syncfusion.GridCommon.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Syncfusion.GridCommon.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfDataGrid/16.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.4.0.53",
+          "Syncfusion.Xamarin.GridCommon": "16.4.0.53",
+          "Syncfusion.Xamarin.SfNumericTextBox": "16.4.0.53",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/netstandard1.0/Syncfusion.Data.Portable.dll": {},
+          "lib/netstandard1.0/Syncfusion.SfDataGrid.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Syncfusion.Data.Portable.dll": {},
+          "lib/netstandard1.0/Syncfusion.SfDataGrid.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfNumericTextBox/16.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.4.0.53",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/netstandard1.0/Syncfusion.SfNumericTextBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Syncfusion.SfNumericTextBox.XForms.dll": {}
+        }
+      },
       "System.AppContext/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -1057,16 +1117,17 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.DataGrid/3.1.0": {
+      "Xamarin.Forms.DataGrid/2.1.0": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "3.0.0.446417"
+          "NETStandard.Library": "1.6.1",
+          "Xamarin.Forms": "2.5.1.527436"
         },
         "compile": {
-          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+          "lib/netstandard1.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll": {}
+          "lib/netstandard1.0/Xamarin.Forms.DataGrid.dll": {}
         }
       }
     }
@@ -1398,7 +1459,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -1739,6 +1800,173 @@
         "lib/wpa81/SQLitePCLRaw.core.dll",
         "sqlitepclraw.core.1.1.11.nupkg.sha512",
         "sqlitepclraw.core.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/16.4.0.53": {
+      "sha512": "AXDyhNXqN8/Srn1WAgUdXwRBEHXSnfIEswsChqPDipZcvauNR6Akzp09UPZbHMCBymoVozX7fSlqZq4suh5hkw==",
+      "type": "package",
+      "path": "syncfusion.licensing/16.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.16.4.0.53.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.Core/16.4.0.53": {
+      "sha512": "K7fhtQpIBuri6zI+9vxuHYZJGY7UKc6t9OMdBWOKAphITqxp5fkkKh3Q1T5p1/BEeh+YcOrwUeoE74nO+ulFzg==",
+      "type": "package",
+      "path": "syncfusion.xamarin.core/16.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.xml",
+        "lib/netstandard1.0/Syncfusion.Core.XForms.dll",
+        "lib/netstandard1.0/Syncfusion.Core.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/ToggleIcons/ToggleCollapsedIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/ToggleIcons/ToggleCollapsedIcon.xbf",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/ToggleIcons/ToggleVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/ToggleIcons/ToggleVisibleIcon.xbf",
+        "lib/uap10.0/Syncfusion.Core.XForms.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.xml",
+        "syncfusion.xamarin.core.16.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.core.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.GridCommon/16.4.0.53": {
+      "sha512": "nhQBb79+nTxO9Oif2+NcXsZYH7AuGWkXxUMmDDQQblVDmkWJvcAB749uAMRu1UVQHjqD2ogOGN6oQFjidUVqpQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.gridcommon/16.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.XML",
+        "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.dll",
+        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.XML",
+        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.dll",
+        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.XML",
+        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll",
+        "lib/netstandard1.0/Syncfusion.GridCommon.Portable.XML",
+        "lib/netstandard1.0/Syncfusion.GridCommon.Portable.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.dll",
+        "lib/uap10.0/Syncfusion.GridCommon.Portable.XML",
+        "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
+        "syncfusion.xamarin.gridcommon.16.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.gridcommon.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfDataGrid/16.4.0.53": {
+      "sha512": "op5aNeeD/U8byWzsdHpW609w1ROBju9pKLhXXA2UoxppbSrHLArTBj/WujTuS8YvZ/GzNm3egBtMrYnrhPRlYA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfdatagrid/16.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Data.Portable.XML",
+        "lib/MonoAndroid10/Syncfusion.Data.Portable.dll",
+        "lib/MonoAndroid10/Syncfusion.SfDataGrid.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Data.Portable.XML",
+        "lib/Xamarin.Mac/Syncfusion.Data.Portable.dll",
+        "lib/Xamarin.Mac/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.SfDataGrid.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Data.Portable.XML",
+        "lib/Xamarin.iOS10/Syncfusion.Data.Portable.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfDataGrid.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/netstandard1.0/Syncfusion.Data.Portable.XML",
+        "lib/netstandard1.0/Syncfusion.Data.Portable.dll",
+        "lib/netstandard1.0/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/netstandard1.0/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Data.Portable.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Data.Portable.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfDataGrid.XForms.xml",
+        "lib/uap10.0/Syncfusion.Data.Portable.XML",
+        "lib/uap10.0/Syncfusion.Data.Portable.dll",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfDataGrid.XForms.xml",
+        "syncfusion.xamarin.sfdatagrid.16.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.sfdatagrid.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfNumericTextBox/16.4.0.53": {
+      "sha512": "4/T04G6SKjnHm8mUJiZtbH1u89FbRYWqslYf/46ZBKAlTBHnBv1532fMTSxfGZM6rfP3qeSEGjsrWomK6gnEFQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfnumerictextbox/16.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfNumericTextBox.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfNumericTextBox.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.iOS.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfNumericTextBox.iOS.dll",
+        "lib/netstandard1.0/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/netstandard1.0/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Properties/Syncfusion.SfInput.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfShared.UWP.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xbf",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfNumericTextBox.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Properties/Syncfusion.SfShared.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xbf",
+        "syncfusion.xamarin.sfnumerictextbox.16.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.sfnumerictextbox.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -4317,15 +4545,15 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.DataGrid/3.1.0": {
-      "sha512": "CgeU+xc00bygM0PURoi63LoeOXYgLXFp12F4aLI4CgPipepWDPa8TOSXz4Bl7RC1IwdVyqZcSnNsZ9Q727qvsQ==",
+    "Xamarin.Forms.DataGrid/2.1.0": {
+      "sha512": "GodTRKZOdawpttfIufga11catiIXO8m+kH1QquM4RYS6bFp24LCN6UzQIdhMmJ3bTiNUcL+ZgrkQkJrem4GUiA==",
       "type": "package",
-      "path": "xamarin.forms.datagrid/3.1.0",
+      "path": "xamarin.forms.datagrid/2.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netstandard2.0/Xamarin.Forms.DataGrid.dll",
-        "xamarin.forms.datagrid.3.1.0.nupkg.sha512",
+        "lib/netstandard1.0/Xamarin.Forms.DataGrid.dll",
+        "xamarin.forms.datagrid.2.1.0.nupkg.sha512",
         "xamarin.forms.datagrid.nuspec"
       ]
     }
@@ -4335,30 +4563,31 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.2.1",
       "NETStandard.Library >= 2.0.3",
       "Rg.Plugins.Popup >= 1.1.5.188",
+      "Syncfusion.Xamarin.SfDataGrid >= 16.4.0.53",
       "System.Buffers >= 4.5.0",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Forms >= 3.4.0.1008975",
-      "Xamarin.Forms.DataGrid >= 3.1.0"
+      "Xamarin.Forms.DataGrid >= 2.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kirill\\.nuget\\packages\\": {},
+    "C:\\Users\\mashi\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\InventoryApplicationV2\\App1\\App1\\App1.csproj",
+      "projectUniqueName": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1\\App1.csproj",
       "projectName": "App1",
-      "projectPath": "D:\\InventoryApplicationV2\\App1\\App1\\App1.csproj",
-      "packagesPath": "C:\\Users\\Kirill\\.nuget\\packages\\",
-      "outputPath": "D:\\InventoryApplicationV2\\App1\\App1\\obj\\",
+      "projectPath": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1\\App1.csproj",
+      "packagesPath": "C:\\Users\\mashi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mashi\\source\\repos\\App1\\App1\\App1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kirill\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mashi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4396,6 +4625,10 @@
             "target": "Package",
             "version": "[1.1.5.188, )"
           },
+          "Syncfusion.Xamarin.SfDataGrid": {
+            "target": "Package",
+            "version": "[16.4.0.53, )"
+          },
           "System.Buffers": {
             "target": "Package",
             "version": "[4.5.0, )"
@@ -4409,8 +4642,10 @@
             "version": "[3.4.0.1008975, )"
           },
           "Xamarin.Forms.DataGrid": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "suppressParent": "All",
             "target": "Package",
-            "version": "[3.1.0, )"
+            "version": "[2.1.0, )"
           }
         },
         "imports": [

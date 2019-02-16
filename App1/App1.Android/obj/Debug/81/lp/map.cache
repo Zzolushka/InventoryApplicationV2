@@ -1,4 +1,8 @@
 App1
+DevExpress.Mobile.Core.Android.v18.2
+DevExpress.Mobile.Core.v18.2
+DevExpress.Mobile.Grid.Android.v18.2
+DevExpress.Mobile.Grid.v18.2
 FormsViewGroup
 Microsoft.Data.Sqlite
 Microsoft.DotNet.PlatformAbstractions
@@ -30,6 +34,16 @@ SQLitePCLRaw.batteries_v2
 SQLitePCLRaw.core
 SQLitePCLRaw.lib.e_sqlite3
 SQLitePCLRaw.provider.e_sqlite3
+Syncfusion.Core.XForms.Android
+Syncfusion.Core.XForms
+Syncfusion.Data.Portable
+Syncfusion.GridCommon.Portable
+Syncfusion.Licensing
+Syncfusion.SfDataGrid.XForms.Android
+Syncfusion.SfDataGrid.XForms
+Syncfusion.SfNumericTextBox.Android
+Syncfusion.SfNumericTextBox.XForms.Android
+Syncfusion.SfNumericTextBox.XForms
 System.Buffers
 System.Collections.Immutable
 System.Diagnostics.DiagnosticSource
@@ -57,7 +71,6 @@ Xamarin.Android.Support.v7.Palette
 Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 Xamarin.Forms.Core
-Xamarin.Forms.DataGrid
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
@@ -75,3 +88,6 @@ System.Diagnostics.Debug
 System.Threading
 System.Reflection.Extensions
 System.Linq.Queryable
+System.Resources.ResourceManager
+System.Diagnostics.Tools
+System.ComponentModel

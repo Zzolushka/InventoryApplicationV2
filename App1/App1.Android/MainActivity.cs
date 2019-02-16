@@ -19,6 +19,8 @@ namespace App1.Droid
 
             base.OnCreate(savedInstanceState);
 
+
+
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
